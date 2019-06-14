@@ -108,8 +108,8 @@ a 	{
 		}
 		
 .menu  {width:130px;float:left;height:100%;color:black;font-family:HelveticaNeue-Black;display:inline}
-#main1 {width:550px;}
-#main2 {width:550px;}
+#main1 {width:550px;padding: 10px;}
+#main2 {width:550px;padding: 10px;}
 .main3 {width:244px;}
 
 .menu ul {
