@@ -126,7 +126,7 @@ table {background-color:transparent}
 
 </style>
 <script>
-function openDay(evt, cityName) {
+function openDay(evt, dayName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
@@ -136,7 +136,7 @@ function openDay(evt, cityName) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(dayName).style.display = "block";
   evt.currentTarget.className += " active";
 }
 </script>
@@ -169,24 +169,24 @@ function openDay(evt, cityName) {
   <br /><br />
   </center>
   
-	<button class="tablinks" onclick="openDay(event, 'intro')"><b>Introduction to This Document</b><br /></button>
-	<button class="tablinks" onclick="openDay(event, '11th')">11-Sep, (1) Scattered clouds</button>
-	<button class="tablinks" onclick="openDay(event, '12th')">12-Sep, (2) Clear skies</button>
-	<button class="tablinks" onclick="openDay(event, '13th')">13-Sep, (3) Hazy </button>
-	<button class="tablinks" onclick="openDay(event, '14th')">14-Sep, (4) Rain </button>
-	<button class="tablinks" onclick="openDay(event, '15th')">15-Sep, (5) Rain </button>
-	<button class="tablinks" onclick="openDay(event, '16th')">16-Sep, (6) Rain </button>
-	<button class="tablinks" onclick="openDay(event, '17th')">17-Sep, (7) Rain </button>
-	<button class="tablinks" onclick="openDay(event, '18th')">18-Sep, (8) Snow morning, clear later </button>
-	<button class="tablinks" onclick="openDay(event, '19th')">19-Sep, (9) </button>
-	<button class="tablinks" onclick="openDay(event, '20th')">20-Sep, (10) </button>
-	<button class="tablinks" onclick="openDay(event, '21st')">21-Sep, (11) Slightly hazy </button>
-	<button class="tablinks" onclick="openDay(event, '22nd')">22-Sep, (12) Overcast </button>
-	<button class="tablinks" onclick="openDay(event, '23rd')">23-Sep, (13) Scattered clouds with breeze </button>
-	<button class="tablinks" onclick="openDay(event, '24th')">24-Sep, (14) Downtime </button>
-	<button class="tablinks" onclick="openDay(event, '25th')">25-Sep, (15) Hazy </button>
-	<button class="tablinks" onclick="openDay(event, '26th')">26-Sep, (16) Scattered high clouds</button>
-	<button class="tablinks" onclick="openDay(event, '27th')">27-Sep, (17) Scattered high clouds</button>
+  <button class="tablinks" onmouseover="openDay(event, 'intro')" onmouseover="openDay(event, 'intro')"><b>Introduction to This Document</b><br /></button>
+  <button class="tablinks" onmouseover="openDay(event, '11th')" onmouseover="openDay(event, '11th')">11-Sep, (1) Scattered clouds</button>
+  <button class="tablinks" onmouseover="openDay(event, '12th')" onmouseover="openDay(event, '12th')">12-Sep, (2) Clear skies</button>
+  <button class="tablinks" onmouseover="openDay(event, '13th')" onmouseover="openDay(event, '13th')">13-Sep, (3) Hazy </button>
+  <button class="tablinks" onmouseover="openDay(event, '14th')" onmouseover="openDay(event, '14th')">14-Sep, (4) Rain </button>
+  <button class="tablinks" onmouseover="openDay(event, '15th')" onmouseover="openDay(event, '15th')">15-Sep, (5) Rain </button>
+  <button class="tablinks" onmouseover="openDay(event, '16th')" onmouseover="openDay(event, '16th')">16-Sep, (6) Rain </button>
+  <button class="tablinks" onmouseover="openDay(event, '17th')" onmouseover="openDay(event, '17th')">17-Sep, (7) Rain </button>
+  <button class="tablinks" onmouseover="openDay(event, '18th')" onmouseover="openDay(event, '18th')">18-Sep, (8) Snow morning, clear later </button>
+  <button class="tablinks" onmouseover="openDay(event, '19th')" onmouseover="openDay(event, '19th')">19-Sep, (9) </button>
+  <button class="tablinks" onmouseover="openDay(event, '20th')" onmouseover="openDay(event, '20th')">20-Sep, (10) </button>
+  <button class="tablinks" onmouseover="openDay(event, '21st')" onmouseover="openDay(event, '21st')">21-Sep, (11) Slightly hazy </button>
+  <button class="tablinks" onmouseover="openDay(event, '22nd')" onmouseover="openDay(event, '22th')">22-Sep, (12) Overcast </button>
+  <button class="tablinks" onmouseover="openDay(event, '23rd')" onmouseover="openDay(event, '23th')">23-Sep, (13) Scattered clouds with breeze </button>
+  <button class="tablinks" onmouseover="openDay(event, '24th')" onmouseover="openDay(event, '24th')">24-Sep, (14) Downtime </button>
+  <button class="tablinks" onmouseover="openDay(event, '25th')" onmouseover="openDay(event, '25th')">25-Sep, (15) Hazy </button>
+  <button class="tablinks" onmouseover="openDay(event, '26th')" onmouseover="openDay(event, '26th')">26-Sep, (16) Scattered high clouds</button>
+  <button class="tablinks" onmouseover="openDay(event, '27th')" onmouseover="openDay(event, '27th')">27-Sep, (17) Scattered high clouds</button>
 </div>
 
 
@@ -213,7 +213,7 @@ function openDay(evt, cityName) {
 <div style="border:1px solid rgb(233,0,88); border-radius: 5px; padding: 2%; margin: 0% 25%; background-color: #f1f1f1; background-image: radial-gradient(circle,white,#f1f1f1);">
 <h3>Using This Document</h3>
 <p>
-	Click a menu item (at LEFT).
+	Hover your cursor over menu items (at LEFT).
 </p>
 <p>
 	Content will be displayed here. 
@@ -246,10 +246,6 @@ function openDay(evt, cityName) {
 These are organized by time and depict morning, mid-day, and late afternoon conditions. 
 Hover over each photo for the time of day.  </p>
 
-<h3>Bugs in this website</h3>
-<p>The display is not the same for Windows, Mac, and mobile platforms. I am working on this.</p>
-<p><b>3/27/2020</b> Site goes live</p>
-<p><b>3/29-4/1/2020</b> Click on menu items (instead of mouse-over) to see content</p>
 
 </div> <!--end INTRODUCTION---->
 
