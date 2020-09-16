@@ -1,92 +1,110 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
 <title>Sarah Petters, PhD | UNC Gillings School of Global Public Health</title>
 <style>
 
-@font-face {
-	font-family: 'HelveticaNeue-Black';
-	font-weight: 900;
-	font-style: regular;
-	src: url('../HelveticaNeue-Black.otf');
-	}
+body, html {
+	padding: 0px; margin: 0px;
+}
 
-@font-face {
-	font-family: 'HelveticaNeue-Heavy';
-	font-weight: 700;
-	font-style: regular;
-	src: url('../HelveticaNeue-Heavy.otf');
-	}
-
-
-* {box-sizing: border-box}
-body {font-family: "Lato", sans-serif;   
-	background-color: #f1f1f1	; /* For browsers that do not support gradients */
-	background-image: radial-gradient(at top,white,white,rgb(245,242,230)); /* Standard syntax (must be last) */} 
+* {box-sizing: border-box;}
 
 table {background-color:transparent}
 
-/* Style the tab */
-.tab {
-  float: left;
-  margin: 15px 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f1f1f1;
-  width: 20%;
-  height: 100%;
-}
+body {font-family: "Open Sans", "Arial", sans-serif;   
+	background-color: #f1f1f1	; /* For browsers that do not support gradients */
+	background-image: radial-gradient(at top,white,white,rgb(245,242,230)); /* Standard syntax (must be last) */} 
 
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 8px 4px;
+
+/* ---------------- BLACK NAV BAR, VERY TOP ------------------*/
+
+.flex-container-navbar {
+  background-color: black;
   width: 100%;
-  /* border: none; */
-  border: 0px solid salmon;
-  border-radius: 5px;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  font-size: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0	px solid black;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.flex-container-navbar > div {
+  /* background-color: rgb(172,141,185); */
+  width: auto; padding: 10px;
+  margin:0px 0px 0px 12px; padding:0px;
+  text-align: center;
+  line-height:28px;
+  font-size: 14px;
+  color: white;  
+}
+
+.flex-container-navbar a {
+  /* background-color: rgb(172,141,185); */
+  width: auto; padding: 10px;
+  margin:0px 0px 0px 12px; padding:0px;
+  text-align: center;
+  line-height:28px;
+  font-size: 14px;
+  color: white; 
+  text-decoration: none; 
+}
+
+
+
+/* ---------------- MENU ------------------------------*/
+
+.flex-container-menu {
+  background-color: white;
+  width: 100%;
+  /*max-width: 1000px; */
+  margin: auto;    /* centered */
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #ccc;
+  border-radius: 0px 0px 5px 5px;
+  color: #3E3E46;	
+}
+
+.flex-container-menu button.tablinks {
+	background-color: transparent;
+	width:5.55%;
+	margin: 0px;
+	border: 0px solid #ccc;
+	text-align: center;
+	font-size: 16px;
+	line-height: 32px;
+	cursor: pointer;
+	color: inherit; font-family: inherit;
+}
+
+.flex-container-menu button:hover {
+	background-color: #ddd;
 }
 
 /* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
+.flex-container-menu button.active {
+  background-color: #ddd;
 }
 
-/* Style the tab content */
+
+
+/* ---------------- TAB CONTENT -------------------------*/
 .tabcontent {
-  float: left;
+	margin:auto;
   padding: 0px 12px;
-  margin-bottom: 400px;
+  margin-bottom: 100px;
+  margin-top: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 80%;
   max-width: 1000px;
   height: 1300px;
   background-color: white;
-  /* border-left: none; */
-/*   display: none;*/
 }
 
-/* Clear floats after the tab */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
+/* -------- for the images --------------*/
 .container {
   position: relative;
   width: 100%;
@@ -124,7 +142,10 @@ table {background-color:transparent}
   background-color: white;
 }
 
+
 </style>
+
+
 <script>
 function openDay(evt, dayName) {
   var i, tabcontent, tablinks;
@@ -148,47 +169,42 @@ function openDay(evt, dayName) {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+
+
 </head>
 <body>
 
-<div>
-<a class="top-a" href="../index.html" 
-	style="margin:0;
-	background-color: none;
-	padding:8px 12px;
-	font-family:HelveticaNeue-Black;
-	text-decoration:none;color:rgb(79,79,71);display:inline;">HOME</a>
+
+
+<div class="flex-container-navbar">
+	<div><a href="../index.html">HOME</a></div>
+	<div><a href="../research/index.html">Publications</a></div>
+	<div><a href="../teaching/index.html">Teaching</a></div>  
+	<div><a href="" style="text-decoration:overline;text-decoration-color:rgb(233,0,88)">FIN-03</a></div>
 </div>
 
-<div class="tab">
-  <center>
-  <br />
-  <b>Menu</b>
-  <br />
-  <i>Click or hover cursor over items below</i>
-  <br /><br />
-  </center>
-  
-  <button class="tablinks" onmouseover="openDay(event, 'intro')" onmouseover="openDay(event, 'intro')"><b>Introduction to This Document</b><br /></button>
-  <button class="tablinks" onmouseover="openDay(event, '11th')" onmouseover="openDay(event, '11th')">11-Sep, (1) Scattered clouds</button>
-  <button class="tablinks" onmouseover="openDay(event, '12th')" onmouseover="openDay(event, '12th')">12-Sep, (2) Clear skies</button>
-  <button class="tablinks" onmouseover="openDay(event, '13th')" onmouseover="openDay(event, '13th')">13-Sep, (3) Hazy </button>
-  <button class="tablinks" onmouseover="openDay(event, '14th')" onmouseover="openDay(event, '14th')">14-Sep, (4) Rain </button>
-  <button class="tablinks" onmouseover="openDay(event, '15th')" onmouseover="openDay(event, '15th')">15-Sep, (5) Rain </button>
-  <button class="tablinks" onmouseover="openDay(event, '16th')" onmouseover="openDay(event, '16th')">16-Sep, (6) Rain </button>
-  <button class="tablinks" onmouseover="openDay(event, '17th')" onmouseover="openDay(event, '17th')">17-Sep, (7) Rain </button>
-  <button class="tablinks" onmouseover="openDay(event, '18th')" onmouseover="openDay(event, '18th')">18-Sep, (8) Snow morning, clear later </button>
-  <button class="tablinks" onmouseover="openDay(event, '19th')" onmouseover="openDay(event, '19th')">19-Sep, (9) </button>
-  <button class="tablinks" onmouseover="openDay(event, '20th')" onmouseover="openDay(event, '20th')">20-Sep, (10) </button>
-  <button class="tablinks" onmouseover="openDay(event, '21st')" onmouseover="openDay(event, '21st')">21-Sep, (11) Slightly hazy </button>
-  <button class="tablinks" onmouseover="openDay(event, '22nd')" onmouseover="openDay(event, '22th')">22-Sep, (12) Overcast </button>
-  <button class="tablinks" onmouseover="openDay(event, '23rd')" onmouseover="openDay(event, '23th')">23-Sep, (13) Scattered clouds with breeze </button>
-  <button class="tablinks" onmouseover="openDay(event, '24th')" onmouseover="openDay(event, '24th')">24-Sep, (14) Downtime </button>
-  <button class="tablinks" onmouseover="openDay(event, '25th')" onmouseover="openDay(event, '25th')">25-Sep, (15) Hazy </button>
-  <button class="tablinks" onmouseover="openDay(event, '26th')" onmouseover="openDay(event, '26th')">26-Sep, (16) Scattered high clouds</button>
-  <button class="tablinks" onmouseover="openDay(event, '27th')" onmouseover="openDay(event, '27th')">27-Sep, (17) Scattered high clouds</button>
-</div>
+<div class="flex-container-menu">
 
+	<!--<div style="background-color:#3E3E46; color:white;">9/11</div> -->
+  <button class="tablinks" onmouseover="openDay(event, 'intro')" onmouseover="openDay(event, 'intro')">README</button>
+  <button class="tablinks" onmouseover="openDay(event, '11th')" onmouseover="openDay(event, '11th')">9/11</button>
+  <button class="tablinks" onmouseover="openDay(event, '12th')" onmouseover="openDay(event, '12th')">9/12</button>
+  <button class="tablinks" onmouseover="openDay(event, '13th')" onmouseover="openDay(event, '13th')">9/13</button>
+  <button class="tablinks" onmouseover="openDay(event, '14th')" onmouseover="openDay(event, '14th')">9/14</button>
+  <button class="tablinks" onmouseover="openDay(event, '15th')" onmouseover="openDay(event, '15th')">9/15</button>
+  <button class="tablinks" onmouseover="openDay(event, '16th')" onmouseover="openDay(event, '16th')">9/16</button>
+  <button class="tablinks" onmouseover="openDay(event, '17th')" onmouseover="openDay(event, '17th')">9/17</button>
+  <button class="tablinks" onmouseover="openDay(event, '18th')" onmouseover="openDay(event, '18th')">9/18</button>
+  <button class="tablinks" onmouseover="openDay(event, '19th')" onmouseover="openDay(event, '19th')">9/19</button>
+  <button class="tablinks" onmouseover="openDay(event, '20th')" onmouseover="openDay(event, '20th')">9/20</button>
+  <button class="tablinks" onmouseover="openDay(event, '21st')" onmouseover="openDay(event, '21st')">9/21</button>
+  <button class="tablinks" onmouseover="openDay(event, '22nd')" onmouseover="openDay(event, '22th')">9/22</button>
+  <button class="tablinks" onmouseover="openDay(event, '23rd')" onmouseover="openDay(event, '23th')">9/23</button>
+  <button class="tablinks" onmouseover="openDay(event, '24th')" onmouseover="openDay(event, '24th')">9/24</button>
+  <button class="tablinks" onmouseover="openDay(event, '25th')" onmouseover="openDay(event, '25th')">9/25</button>
+  <button class="tablinks" onmouseover="openDay(event, '26th')" onmouseover="openDay(event, '26th')">9/26</button>
+  <button class="tablinks" onmouseover="openDay(event, '27th')" onmouseover="openDay(event, '27th')">9/27</button>
+</div>
 
 
 <!--
@@ -200,28 +216,57 @@ function openDay(evt, dayName) {
 -->
 
 
-<div id="intro" class="tabcontent">
-<h3>Introduction to This Document</h3>
+<div id="intro" class="tabcontent" style="height: 1800px">
+
+
+<div style="border:1px solid rgb(233,0,88); border-radius: 5px; padding: 2%; margin: 2% 25%; background-color: #f1f1f1; background-image: radial-gradient(circle,white,#f1f1f1);">
+<h3>Using This Document</h3>
+<p>	Click or hover your cursor over the dates (at top). 
+Content will be displayed here. 
+After refreshing the page, all dcontent appears below (scroll down). </p>
+</div>
+
+
 
 	<br />
-	<center><h1>Title Of <br />Paper Goes Here: <br />Online Supplemental Figures</h1></center>
+	<center><h2>Online Supplemental Figures:<br />
+	The Fifth International Workshop on Ice Nucleation Phase 3 (FIN-03): <br />
+	Field Intercomparison of Ice Nucleation Measurements</h2></center>
 	<br />
 	
-<p><b>Authors</b></p>
-<p><i>Affilations</i></p>
+<p>Mirrielees, JA,<sup>1</sup> SS Petters,<sup>2,a</sup> DJ Cziczo,<sup>3,b</sup> PJ DeMott,<sup>4</sup> 
+	MD Petters,<sup>2</sup> HG Bingemer,<sup>5</sup> TCJ Hill,<sup>4</sup> K Froyd,<sup>6,7</sup> 
+	S Garimella,<sup>3,c</sup> AG Hallar,<sup>9,d</sup> EJT Levin,<sup>4,e</sup> I McCubbin,<sup>7</sup>
+	AE Perring,<sup>7,8</sup> J Schrod,<sup>5</sup> T Schiebel,<sup>4,10</sup> KJ Suski,<sup>4,f</sup> 
+	D Weber,<sup>5</sup> MJ Wolfe,<sup>3</sup> M Zawadowicz,<sup>3,g</sup> J Zenker,<sup>1,h</sup> 
+	SD Brooks<sup>1,*</sup>
+</p>
 
-<div style="border:1px solid rgb(233,0,88); border-radius: 5px; padding: 2%; margin: 0% 25%; background-color: #f1f1f1; background-image: radial-gradient(circle,white,#f1f1f1);">
-<h3>Using This Document</h3>
-<p>
-	Click or hover your cursor over menu items (at LEFT).
+<p style="font-size:x-small">
+<sup>1</sup>Texas A&M University, Department of Atmospheric Sciences, College Station, TX, USA <br />
+<sup>2</sup>North Carolina State University, Department of Marine, Earth and Atmospheric Sciences, Raleigh, NC, USA <br />
+<sup>3</sup>Massachusetts Institute of Technology, Department of Earth, Atmospheric and Planetary Sciences, Cambridge, MA, USA <br />
+<sup>4</sup>Colorado State University, Department of Atmospheric Science, Fort Collins, CO, USA <br />
+<sup>5</sup>Goethe University Frankfurt, Institute for Atmospheric and Environmental Sciences, 60438 Frankfurt am Main, Germany <br />
+<sup>6</sup>NOAA Earth System Research Laboratory, Boulder, CO, USA <br />
+<sup>7</sup>CIRES, University of Colorado, Boulder, CO, USA <br />
+<sup>8</sup>Colgate University, Department of Chemistry, Hamilton, NY, USA <br />
+<sup>9</sup>Storm Peak Laboratory, Division of Atmospheric Science, Desert Research Institute, Reno, NV, USA <br />
+<sup>10</sup>Karlruhe Institute of Technology (KIT), Institute of Meteorology and Climate Research (IMK-AAF), Eggenstein-Leopoldshafen, Germany <br />
+<sup>a</sup>now at: University of North Carolina, Department of Environmental Sciences and Engineering, Chapel Hill, NC, USA <br />
+<sup>b</sup>now at: Purdue University, Department of Earth, Atmospheric, and Planetary Sciences, West Lafayette, IN, USA <br />
+<sup>c</sup>now at: ACME AtronOmatic, LLC, Portland, OR, USA <br />
+<sup>d</sup>now at: University of Utah, Department of Atmospheric Sciences, Salt Lake City, UT, USA <br />
+<sup>e</sup>now at: Handix Scientific, Boulder CO, USA <br />
+<sup>f</sup>now at: JUUL Labs, San Francisco, CA, USA <br />
+<sup>g</sup>now at: Pacific Northwest National Laboratory, Richland, WA, USA <br />
+<sup>h</sup>now at: Trinity Consulting, Inc., Albuquerque, NM, USA  <br />
+<sup>*</sup>Correspondence: Sarah D. Brooks (sbrooks@tamu.edu)
 </p>
-<p>
-	Content will be displayed here. 
-</p>
-<p>
-	After refreshing the page, content appears below (scroll down). 
-</p>
-</div>
+
+<p>The main text is in preparation for publication.</p>
+
+
 
 
 <h3>Introduction</h3>
@@ -230,7 +275,7 @@ function openDay(evt, dayName) {
 </p>
 
 <h3>Menu</h3>
-<p> The menu at left lists campaign days by date in 2015, day number in campaign, and weather conditions.</i> </p>
+<p> The menu at top lists campaign days by date in 2015. </p>
 
 <h3>Timeseries Figure</h3>
 <p> The timeseries displayed at the top of each panel. </p>
@@ -242,7 +287,8 @@ function openDay(evt, dayName) {
 <p> (F) Wind rose showing wind speed and direction at SPL, as provided by WRCC, plotted using <i>WindRose for MATLAB</i> by Daniel Pereira (https://dpereira.asempyme.com/windrose/) </p>
 
 <h3>Photo Array</h3>
-<p> Photos were taken from the rooftop balcony of Storm Peak Laboratory towards the South (road), West (valley), North (wilderness), and East (Skilift). 
+<p> Photos were taken by Sarah Petters in September 2015 from the rooftop balcony of Storm Peak Laboratory 
+towards the South (road), West (valley), North (wilderness), and East (Skilift). 
 These are organized by time and depict morning, mid-day, and late afternoon conditions. 
 Hover over each photo for the time of day.  </p>
 
@@ -250,6 +296,8 @@ Hover over each photo for the time of day.  </p>
 <p> The display works differently for Windows, Mac, and mobile browsers and screen sizes. I am working on this. </p>
 <p> 3/26/2020 Site is live</p>
 <p> 3/29-4/1/2020 Click menu items or hover the mouse (Windows only)</p>
+<p> 9/15/2020 Menu now displayed across top</p>
+
 
 
 </div> <!--end INTRODUCTION---->
@@ -2696,7 +2744,6 @@ oo1oo oo1oo oo1oo oo1oo oo1oo oo1oo oo1oo oo1oo oo1oo oo1oo
 
 
 
-<div class="clearfix"></div>
 
 
 
@@ -2992,4 +3039,3 @@ clcc:::clllllc::;;;;;;;;;;;;;;;;;;;;;::::;:::::::::::::::::cccccccccccccclllllll
 ........  .       ...... ..............',,;:::::::::ccllllllllllllccccclllllllllllllllllllllllcccccccccccc:::::c:;;;;;,',cccc::;;,'.         .........................'.....''...',;,',;;;:;,,;;,,;;;;:;,,;,,,,,,;::;,,'',;;,;;'.',,'','...',,''''.................................................   ..    ........  ... ..  'llccllllllllcclllllcccccllllllllllllllllllllllc:::ccllllllloo:,..                                                  ..........................................................                                        ..','....     ......      ..........  ........................ .........................''''''''''''''.....',,,;:::ccclllooodddddddddddddddddoddddddoooooooooooooloolllllllllllllllllllllccllcccc:.....'...............',,'.....................'.............,,............
 -->
 </html> 
-
