@@ -65,10 +65,40 @@ a 	{
 		border:dotted 0px red;
 		}
 
+/* ----- BLACK NAV BAR, VERY TOP ---*/
+.flex-container-navbar {
+	background-color: black;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	border: 0px solid black;
+}
+.flex-container-navbar > div {
+	width: auto; 
+	padding: 0px;
+	margin: 0px 0px 0px 12px;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+	color: white;  
+	font-family: 'Open Sans', 'Arial', sans-serif;
+}
+.flex-container-navbar a {
+	width: auto; 
+	padding: 0px;
+	margin: 0px 0px 0px 12px;
+	text-align: center;
+	line-height: 28px;
+	font-size: 14px;
+	color: white;  
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	text-decoration: none; 
+}
+
 .top {
 		float:auto;
 		width:100%; height:3em;
-		margin:0px; margin-top:0.5em;
+		margin:0px; margin-top:0;
 		background-color:rgb(45,46,41);color:yellow;
 		}
 		
@@ -96,9 +126,9 @@ a 	{
 		
 .underfooter {
 		float:auto;margin:0;
-		width:100%; height:1em;
-		position:absolute; left:0; bottom:0.25em;
-		background-color:none;color:rgb(109,108,103);
+		width:100%; height:20px; font-size:14px; font-family:'Open Sans','Arial',sans-serif;
+		position:absolute; left:0; bottom:0;
+		background-color:black;color:rgb(109,108,103);
 		}
 		
 .content {
