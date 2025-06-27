@@ -226,7 +226,7 @@ a 	{
 	.top-p 			{display:inline-block;background-color:rgb(83,85,77);color:white;height:2em;margin:0;} .top-p:hover {background-color:rgb(111,113,100);}
 	.menu  {display:none}
 	#main1 	{display:block;width:93%;}
-	.main3	{display:block;}
+	.main3	{display:none}
 	#main2 			{display:block; width:93%;/*background-color:rgb(203,200,191);*/}
 	body,html 		{/*background-color:rgb(203,200,191);*/background-position: -200 0;}
 	.inner 			{width:560px;}
